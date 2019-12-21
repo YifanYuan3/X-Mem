@@ -203,8 +203,8 @@ void LoadWorker::run() {
     }
 
     //Unset processor affinity
-    if (locked)
-        unlock_thread_to_numa_node();
+    //if (locked)
+    //    unlock_thread_to_numa_node();
 
     //Revert thread priority
 #ifdef _WIN32
