@@ -135,9 +135,9 @@ void LoadWorker::run() {
     }
     
     //Set processor affinity
-    bool locked = lock_thread_to_cpu(cpu_affinity);
-    if (!locked)
-        std::cerr << "WARNING: Failed to lock thread to logical CPU " << cpu_affinity << "! Results may not be correct." << std::endl;
+    //bool locked = lock_thread_to_cpu(cpu_affinity);
+    //if (!locked)
+    //    std::cerr << "WARNING: Failed to lock thread to logical CPU " << cpu_affinity << "! Results may not be correct." << std::endl;
 
     //Increase scheduling priority
 #ifdef _WIN32
